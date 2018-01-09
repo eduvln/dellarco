@@ -16,3 +16,8 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+
+Route.on('/contato').render("contact"); 
+
+Route.post("/contato", "ContactController.receiveForm");
+
